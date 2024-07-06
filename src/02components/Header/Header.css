@@ -1,0 +1,13 @@
+.upbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 65px;
+    align-items: center;
+    
+
+}
+
+.logo {
+    display: flex;
+    width: 150px;
+}

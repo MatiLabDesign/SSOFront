@@ -1,0 +1,1 @@
+export const OT_BASE_REST_API_URL = "";

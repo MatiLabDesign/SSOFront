@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'sidemenu main main'
+        'footer footer footer';
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: auto auto 40px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(204, 204, 204);
+    
+}
+
+
+.sidebar {
+    grid-area: sidemenu;
+    background-color: #2f2f2f;
+    height: 840px;
+    width: 200px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #b6b6b6;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(37, 37, 37);
+    min-height: 30px;
+}
+
+#input-nombre {
+    background-color: rgb(3, 129, 99);
+}

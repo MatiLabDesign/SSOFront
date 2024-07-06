@@ -1,0 +1,27 @@
+.form-container {
+    background-color: rgba(95, 95, 95, 0.407);
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 50px;
+    border-radius: 12px;
+
+}
+
+#label {
+    margin-top: 25px;
+
+}
+
+#input {
+    margin: 25px 0;
+}
+
+#btn {
+    margin: 25px 0;
+}
+
+.form-login {
+    padding-top: 120px;
+}

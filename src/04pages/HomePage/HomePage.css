@@ -1,0 +1,52 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'main main main';
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: auto auto 40px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(204, 204, 204);
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: #b6b6b6;
+    /* height: 840px; */
+}
+
+.footer {
+    
+    background-color: rgb(37, 37, 37);
+    height: 30px;
+    
+}
+
+#input-nombre {
+    background-color: rgb(3, 129, 99);
+}
+.foto{
+    width: 100vw;
+    height: 100%;
+    background-image: url('trinoil.jpeg');
+    background-size: cover;
+    
+}
+
+.section1{
+    height:800px;
+    background-color: rgba(127, 228, 228, 0.283);
+}
+.section2{
+    height:800px;
+    background-color: rgba(228, 215, 127, 0.283);
+}
+.section3{
+    height:800px;
+    background-color: rgba(189, 44, 97, 0.283);
+}

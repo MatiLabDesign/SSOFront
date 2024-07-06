@@ -1,0 +1,22 @@
+import React from 'react'
+import './LoginForm.css'
+import Label from './../../01uikit/label/Label';
+import Input from './../../01uikit/Input/Input';
+import Button from './../../01uikit/Button/Button';
+
+const LoginForm = () => {
+  return (
+    <div className="form-container">
+        <form className="form-login" action="/principal">
+            <Label id="label" label="Usuario"/>
+            <Input type="text" id="input" placeholder="Coloca tu usuario"/>
+            <Label id="label" label="Contraseña"/>
+            <Input type="password" id="input" placeholder="Coloca tu contraseña"/>
+            <Button id="btn"text="Ingresar"/>
+        </form>
+      
+    </div>
+  )
+}
+
+export default LoginForm
