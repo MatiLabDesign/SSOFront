@@ -21,3 +21,7 @@
 .row{
     display: flex;
 }
+
+.usuario-content{
+    padding-left: 50px;
+}

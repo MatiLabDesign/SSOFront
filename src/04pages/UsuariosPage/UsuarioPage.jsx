@@ -16,7 +16,9 @@ export const UsuarioPage = () => {
         <div className="main">
           <div className="row">
           <Principal />
+          <div className="usuario-content">
           <h1>Soy un usuario</h1>
+          </div>
           
 
           </div>
