@@ -9,7 +9,8 @@ const Principal = () => {
     <div className="principal-grid-container">
       <div className="sidebar"> 
         
-        <SideMenu/> 
+        <SideMenu/>
+         
       </div>
       <div className="main">
         
