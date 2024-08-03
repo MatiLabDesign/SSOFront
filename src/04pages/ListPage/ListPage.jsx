@@ -1,30 +1,25 @@
 import React from "react";
-import "./OTPage.css";
-import Button from "../../01uikit/Button/Button";
-import { Link } from "react-router-dom";
+import "./ListPage.css";
+import ClienteList from "./../../02components/Lists/ClienteList/ClienteList";
 import Principal from "../../03templates/Principal/Principal";
 import Header2 from "../../02components/Header/Header2";
 
-
-
-export const UsuarioPage = () => {
+const ListPage = () => {
   return (
-    <div>
+    <>
       <div className="grid-container">
         <div className="header">
-          <Header2 />
+          <Header2/>
         </div>
         <div className="main">
           <div className="row">
-          <Principal />
-          <h3>Consultar OT</h3>
-          
-
+            <Principal/>
+            <ClienteList />
           </div>
         </div>
-        
       </div>
-    </div>
+    </>
   );
 };
-export default UsuarioPage;
+
+export default ListPage;

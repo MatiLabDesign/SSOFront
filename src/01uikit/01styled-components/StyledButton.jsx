@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
@@ -14,3 +15,19 @@ export const StyledButton = styled.button`
     color: #fff;
   }
 `;
+
+const Button = ({ text, id, onClick }) => {
+  return (
+    <StyledButton
+      className="btn-principal"
+      id={id}
+      onClick={() => {
+        onClick
+      }}
+    >
+      {text}
+    </StyledButton>
+  );
+};
+
+export default Button;

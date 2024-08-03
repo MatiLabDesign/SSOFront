@@ -1,0 +1,23 @@
+.principal-grid-container {
+    display: grid;
+    grid-template-areas:
+        'sidebar main';
+    grid-template-columns: 200px auto;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(39, 39, 39);
+
+}
+
+.main {
+    grid-area: main;
+    background-color: #b6b6b6;
+    height: 840px;
+}
+
+.row {
+    display: flex;
+}

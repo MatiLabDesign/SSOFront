@@ -1,0 +1,66 @@
+.list-container{
+    display:flex;
+    justify-content:center;
+    color: #666;
+    max-width: 80%;
+    margin:auto;
+    min-height:100vh;
+    padding-top: 100px;
+    padding-left: 25px;
+    /* background-color: #8e8e8e; */
+    
+}
+.search-container{
+    display: flex;
+    justify-content:center;
+    width: 80%;
+    margin: 15px auto;
+    
+}
+
+.form-control{
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border-radius:10px;
+    background-color: #e0e0e0;
+    padding-left: 25px;
+    color: #666;
+}
+
+.table-row{
+    display: flex;
+   flex-wrap: wrap;
+    
+}
+
+.titulo-lista{
+    margin-top: 25px;
+}
+
+.tabla{
+    margin-top: 25px;
+}
+
+#titulos-listas{
+    margin: 0 20px;
+
+}
+#titulos-listas-acciones{
+    margin: 0 20px;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    background-color: #085734;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;margin: 25px 0;
+    cursor: pointer;
+}
+
+#contenido-lista{
+    padding: 0 25px;
+}

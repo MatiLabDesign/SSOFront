@@ -2,6 +2,7 @@ import React from "react";
 import "./LoginPage.css";
 import Header2 from "../../02components/Header/Header2";
 import LoginForm from "../../02components/Forms/LoginForm";
+import ClienteForm from "../../02components/Forms/ClienteForm/ClienteForm";
 
 const LoginPage = () => {
   return (
@@ -13,6 +14,7 @@ const LoginPage = () => {
         <div className="main">
           <div className="row2">
             <LoginForm />
+            
           </div>
         </div>
       </div>

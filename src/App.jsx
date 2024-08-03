@@ -11,6 +11,9 @@ import LoginPage from "./04pages/LoginPage/LoginPage";
 import Login from "./02components/Forms/LoginForm";
 import UsuarioPage from "./04pages/UsuariosPage/UsuarioPage";
 import OTPage from "./04pages/OTPage/OTPage";
+import Button, { StyledButton } from "./01uikit/01styled-components/StyledButton";
+import ListPage from "./04pages/ListPage/ListPage";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -28,7 +31,9 @@ function App() {
           <Route exact path="/usuarios" element={<UsuarioPage/>}></Route>
           <Route exact path="/ot" element={<OTPage/>}></Route>
           <Route exact path="/nuevo" element={<NuevoPage/>}></Route>
+          <Route exact path="/listar-cliente" element={<ListPage/>}></Route>
         </Routes>
+     
       </BrowserRouter>
       
     </>

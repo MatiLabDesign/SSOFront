@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const StyledLabel = styled.label`
-  font-size: 25px;
-  font-weight: bold;
-  color: #575757;
-  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #3b3b3b;
+  font-family: "Nunito Sans", sans-serif;
   text-align: left;
   display: block;
+  margin-left: 10px;
 `;

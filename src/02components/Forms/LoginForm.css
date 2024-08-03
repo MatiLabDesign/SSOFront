@@ -9,13 +9,17 @@
 
 }
 
-#label {
+.uno{
     margin-top: 25px;
-
 }
 
+/* #label {
+    margin-top: 25px;
+
+} */
+
 #input {
-    margin: 25px 0;
+    margin: 8px 0;
 }
 
 #btn {
