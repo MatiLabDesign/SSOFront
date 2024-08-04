@@ -25,20 +25,20 @@ const ClienteList = () => {
       console.log(e.target.value);
     };
    
-    const results = !search ? clientes : clientes.filter((dato) =>dato.nombre.toLowerCase().includes(search.toLocaleLowerCase()));
+    const results = !search ? clientes : clientes.filter((dato) =>dato.razonSocial.toLowerCase().includes(search.toLocaleLowerCase()));
   
     //----------------------------
   return (
-    <>
-      {/* <div className="search-container">
+    <div className="list-container">
+      <div className="search-container">
         <input
           value={search}
           onChange={searcher}
           type="text"
-          placeholder="Filtrar Sede por nombre"
+          placeholder="Filtrar Cliente por Razón Social"
           className="form-control"
         />
-      </div> */}
+      </div>
     <div className="list-container">
       <div>
       <Link  to="/nuevo"><button className="form-control-s">Crear Cliente</button></Link>
@@ -92,7 +92,7 @@ const ClienteList = () => {
         </table>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 
