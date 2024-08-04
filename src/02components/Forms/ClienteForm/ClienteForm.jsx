@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const ClienteForm = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, formState: {errors}, handleSubmit } = useForm();
 
   const navigate = useNavigate();
 
@@ -23,11 +23,19 @@ const ClienteForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="form-cliente">
         <div className="input-cliente">
           <Label id="label" label={"Cuit"} />
-          <input type="number" {...register('cuit')} />
+          <input type="number" {...register('cuit', {
+            required: true,
+            maxLength: 11
+          })} />
+          {errors.cuit?.type === 'required' && <p>El campo es requerido</p>} 
+          {errors.cuit?.type === 'maxLength' && <p>Maximo de 11 numeros</p>} 
         </div>
         <div className="input-cliente">
           <Label id="label" label={"Razón Social"} />
-          <input type="text" {...register('razonSocial')} />
+          <input type="text" {...register('razonSocial', {
+            required: true
+          })} />
+          {errors.razonSocial?.type === 'required' && <p>El campo es requerido</p>} 
         </div>
 
         {/* select de areas */}
@@ -42,21 +50,36 @@ const ClienteForm = () => {
 
         <div className="input-cliente">
           <Label id="label" label={"Nombre Fantasia"} />
-          <input type="text" {...register('nombreFantasia')} />
+          <input type="text" {...register('nombreFantasia', {
+            required: true
+          })} />
+          {errors.nombreFantasia?.type === 'required' && <p>El campo es requerido</p>} 
         </div>
         <div className="input-cliente">
           <Label id="label" label={"Contacto"} />
-          <input type="text" {...register('nombreContacto')} />
+          <input type="text" {...register('nombreContacto', {
+            required: true
+          })} />
+          {errors.nombreContacto?.type === 'required' && <p>El campo es requerido</p>} 
         </div>
         <div className="input-cliente">
           <Label id="label" label={"Telefono"} />
-          <input type="number" {...register('telefono')} />
+          <input type="number" {...register('telefono', {
+            required: true,
+            maxLength: 10
+          })} />
+          {errors.telefono?.type === 'required' && <p>El campo es requerido</p>}
+          {errors.telefono?.type === 'maxLength' && <p>Maximo de 10 numeros</p>}  
         </div>
         <div className="input-cliente">
           <Label id="label" label={"Email"} />
-          <input type="text" {...register('mail')} />
+          <input type="text" {...register('mail', {
+            required: true,
+            pattern: /^\S+@\S+\.\S+$/
+          })} />
+          {errors.mail?.type === 'required' && <p>El campo es requerido</p>} 
+          {errors.mail?.type === 'pattern' && <p>No corresponde a un email</p>} 
         </div>
-
         <input          
           className="form-control-s"
           type="submit"
